@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Angelo Pintilie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie Eligibility Site</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>Movie Eligiblity Calculator</h1>
+		<table>
+			<tr>
+				<td>
+					<h3>Enter your current age:</h3>
+					<form action="javascript:displayRating()">						
+						<label for="age">Age:</label>
+						<input type="number" step="1" min="0" max="100" id="age"><br><br>
+						<input type="submit" value="Display Rating">
+					</form>
+				</td>
+				<td>
+					<img src="./images/rating.jpg" alt="rating" width="60%">
+				</td>
+			</tr>
+		</table>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="rating">
+			</div>
+		</div>
+  </body>
+</html>
