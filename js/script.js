@@ -10,6 +10,14 @@
  * This function displays a movie rating based on the age of the user
  */
 function displayRating () {
+  // initialize constants
+  const RRATED = 18
+    // initialize constants
+  const PG13 = 13
+   // initialize constants
+  const PG = 11
+  // initialize constants
+  const G = 1
   	// initialize variables
 	let rating = ""
 	
@@ -17,20 +25,20 @@ function displayRating () {
 	let age = parseInt(document.getElementById('age').value)
 
   	// if age is 18 or more, display "You are eligible to see.."
-	if (age >= 18) {
-		rating = "You are eligible to see an R rated film!"
+	if (age >= RRATED) {
+		rating = "You are eligible to see an R rated film by yourself!"
 	} 
 	// otherwise, if age is 13 or more, display "You are eligible to see.."	
-	else if (age >= 13) {
+	else if (age >= PG13) {
 		rating = "You are eligible to see a PG-13 movie by yourself!"
 	}
 	// otherwise, if age is 10 or more, display "You are eligible to see.."
-	else if (age >= 10) {
+	else if (age >= PG) {
 		rating = "You are eligible to see a PG rated movie by yourself! However, you need to be supervised to see a PG-13 film."
 	}
     // otherwise, if age is 8 or more, display "You are eligible to see.."
-	else if (age >= 1) {
-		rating = "You are eligible to see a G rated movie by yourself! However, you need to be supervised to see a PG film."
+	else if (age >= G) {
+		rating = "You are eligible to see a G rated movie with the company of a parent or gaurdian!"
 	}
 	// otherwise, they did not enter a valid age
 	else {
