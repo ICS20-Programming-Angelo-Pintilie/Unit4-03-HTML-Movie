@@ -29,7 +29,7 @@ function displayRating () {
 		rating = "You are eligible to see a PG rated movie by yourself! However, you need to be supervised to see a PG-13 film."
 	}
     // otherwise, if age is 8 or more, display "You are eligible to see.."
-	else if (age >= 8) {
+	else if (age >= 1) {
 		rating = "You are eligible to see a G rated movie by yourself! However, you need to be supervised to see a PG film."
 	}
 	// otherwise, they did not enter a valid age
